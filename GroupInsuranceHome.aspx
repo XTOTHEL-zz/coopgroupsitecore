@@ -478,16 +478,17 @@
     <sc:VisitorIdentification ID="VisitorIdentification1" runat="server" />
 </head>
 <body>
-		<form id="form1" runat="server">
+    
+    <form id="form1" runat="server">
         <asp:hiddenfield runat="server" id="baseURL" clientidmode="Static"></asp:hiddenfield>
         <asp:hiddenfield runat="server" id="language" clientidmode="Static"></asp:hiddenfield>
     </form>
+    
     <sc:placeholder runat="server" id="GroupInsuranceScroll" key="GroupInsuranceScroll"></sc:placeholder>
+    
     <div class="container">
-
-
-        <div class="row" id="osbnew">
-
+		
+        <div class="row" id="osbnew">    
             <div class="col-xs-9 col-sm-10 col-md-8 col-lg-8 oLang" id="ons">
                 <sc:placeholder runat="server" id="GroupInsuranceOnlineServices" key="GroupInsuranceOnlineServices"></sc:placeholder>
             </div>
@@ -495,110 +496,92 @@
             <div id="wb-skip">
                 <sc:placeholder runat="server" id="GroupInsuranceSkipTo" key="GroupInsuranceSkipTo"></sc:placeholder>
             </div>
+		
             <div class="col-xs-3 col-sm-2 col-md-4 col-lg-4 pull-right oLang" id="xs">
-
                 <div id="oSearch" style="float: left; width: 50%">
                     <button id="searchClick" class="btn btn-default ini" style="display: none;" type="button"><i class="icon-search"></i></button>
-                    <div class="gen" id="gen">
-                    </div>
+				
+                    <div class="gen" id="gen"></div>
+    				
                     <div id="search" style="padding-right: 10px;">
                         <sc:placeholder runat="server" id="GroupInsuranceSearch" key="GroupInsuranceSearch"></sc:placeholder>
-                    </div>
+                    </div>  
                 </div>
+
                 <div id="oLang" style="float: right; width: 49%;">
                     <sc:placeholder runat="server" id="GroupInsuranceLanguage" key="GroupInsuranceLanguage"></sc:placeholder>
                 </div>
+                
                 <div style="clear: both"></div>
-
             </div>
 
             <div style="clear: both"></div>
         </div>
-        <div class="row">
-            <div class="col-sm-6 col-lg-6 col-md-6 col-xs-6" id="img_box1">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6 col-lg-6 col-md-6 col-xs-6" id="img_box2">
-            </div>
-        </div>
 
-
+        <!--logo-->
         <div class="row" id="newLogo" style="position: relative; z-index: 1;">
-
-            <div class="col-sm-12 col-lg-12 col-md-12 col-xs-12">
-                <sc:placeholder runat="server" id="GroupInsuranceLogo" key="GroupInsuranceLogo"></sc:placeholder>
-            </div>
+            <sc:placeholder runat="server" id="GroupInsuranceLogo" key="GroupInsuranceLogo"></sc:placeholder>
         </div>
 
-        <div class="row navM" id="navM">
+        <!--mobile nav-->
+        <div class="row navM" id="navM" style="display: none;">
             <div id="newMenu3" class="col-xs-12 col-sm-12 col-md-12 col-lg-12"></div>
         </div>
-
-        <div class="row" id="osb">
+        
+        <!--nav-->
+        <div class="row" id="osb" style="display: block;">
             <div class="col-xs-8 col-sm-12 col-md-12 col-lg-12" id="oNav" aria-label="Main menu">
                 <sc:placeholder runat="server" id="GroupInsuranceNavbar" key="GroupInsuranceNavbar"></sc:placeholder>
             </div>
         </div>
 
-        <div class="row backg">
-            <div id="bnrCont" class="col-xs-12 col-sm-12 col-md-8 col-lg-8 bnrCont">
+        
+        <!--alerts-->
+        <div id="alerts" class="row">
+            <div class="alert alert-warning alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <strong>Warning!</strong> Better check yourself, you're not looking too good.
+            </div>
+        </div>
+
+
+        <!--banner and rightCTA-->
+        <div id="banners" class="row">
+            <!--main banner-->
+            <div id="bnrCont" class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
                 <sc:placeholder runat="server" id="GroupInsuranceQuoteBanner" key="GroupInsuranceQuoteBanner"></sc:placeholder>
             </div>
-            <sc:placeholder runat="server" id="GroupInsuranceContestCampaignETC" key="GroupInsuranceContestCampaignETC"></sc:placeholder>
-        </div>
-
-        <div class="row newh" id="newh">
-            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 bannerBox1 backg" id="h1a">
-                <!--here the control will be added when window.resize to mobile size -->
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 bannerBox1 backg" id="h2a">
-                <!--here the control will be added when window.resize to mobile size -->
-            </div>
-        </div>
-        <div class="row tabCampaign" id="tabCampaign">
-            <sc:placeholder runat="server" id="GroupInsuranceContestCampaign" key="GroupInsuranceContestCampaign"></sc:placeholder>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-6 col-md-3 col-lg-3 col-xs-12">
-                <div class="white">
-                    <sc:placeholder runat="server" id="GroupInsuranceHighlightbox1" key="GroupInsuranceHighlightbox1"></sc:placeholder>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-3 col-lg-3 col-xs-12">
-                <div class="white">
-                    <sc:placeholder runat="server" id="GroupInsuranceHighlightbox2" key="GroupInsuranceHighlightbox2"></sc:placeholder>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-3 col-lg-3 col-xs-12">
-                <div class="white">
-                    <sc:placeholder runat="server" id="GroupInsuranceHighlightbox3" key="GroupInsuranceHighlightbox3"></sc:placeholder>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-3 col-lg-3 col-xs-12">
-                <div class="white">
-                    <sc:placeholder runat="server" id="GroupInsuranceHighlightbox4" key="GroupInsuranceHighlightbox4"></sc:placeholder>
-                </div>
+                    
+            <!--Manage policy circle callout -->    
+            <div id="bnrCTA" class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+                <sc:placeholder runat="server" id="GroupInsuranceContestCampaignETC" key="GroupInsuranceContestCampaignETC"></sc:placeholder>
             </div>
         </div>
 
+        <!--teasers-->
+        <div id="teasers" class="row cta">
+            <div class="col-sm-6 col-md-3 col-lg-3 col-xs-12 text-center">
+                <sc:placeholder runat="server" id="GroupInsuranceHighlightbox1" key="GroupInsuranceHighlightbox1"></sc:placeholder>
+            </div>
+            
+            <div class="col-sm-6 col-md-3 col-lg-3 col-xs-12 text-center">       
+                <sc:placeholder runat="server" id="GroupInsuranceHighlightbox2" key="GroupInsuranceHighlightbox2"></sc:placeholder>
+            </div>
 
+            <div class="col-sm-6 col-md-3 col-lg-3 col-xs-12 text-center">
+                <sc:placeholder runat="server" id="GroupInsuranceHighlightbox3" key="GroupInsuranceHighlightbox3"></sc:placeholder>
+            </div>
 
-        <div class="row footerDiv" id="grayLinks">
-
-            <sc:placeholder runat="server" id="GroupInsuranceAutoInsurance" key="GroupInsuranceAutoInsurance"></sc:placeholder>
-            <sc:placeholder runat="server" id="GroupInsuranceHomeInsurance" key="GroupInsuranceHomeInsurance"></sc:placeholder>
-            <sc:placeholder runat="server" id="GroupInsuranceOtherProducts" key="GroupInsuranceOtherProducts"></sc:placeholder>
-            <sc:placeholder runat="server" id="GroupInsuranceClaims" key="GroupInsuranceClaims"></sc:placeholder>
-            <sc:placeholder runat="server" id="GroupInsuranceGroupSponsors" key="GroupInsuranceGroupSponsors"></sc:placeholder>
-            <sc:placeholder runat="server" id="GroupInsuranceAboutUs" key="GroupInsuranceAboutUs"></sc:placeholder>
-
+            <div class="col-sm-6 col-md-3 col-lg-3 col-xs-12 text-center">
+                <sc:placeholder runat="server" id="GroupInsuranceHighlightbox4" key="GroupInsuranceHighlightbox4"></sc:placeholder>
+            </div>
         </div>
 
-        <div class="row" id="class">
+    </div>
+
+        <!--footer-->
+        <footer class="footerCopyright">
             <sc:placeholder runat="server" id="GroupInsuranceFooter" key="GroupInsuranceFooter"></sc:placeholder>
-        </div>
-
-    </div></body>
+        </footer>
+    </body>
 </html>
