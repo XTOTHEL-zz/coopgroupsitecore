@@ -549,120 +549,79 @@
         <asp:hiddenfield runat="server" id="baseURL" clientidmode="Static"></asp:hiddenfield>
         <asp:hiddenfield runat="server" id="language" clientidmode="Static"></asp:hiddenfield>
         <sc:placeholder runat="server" id="GroupInsuranceScroll" key="GroupInsuranceScroll"></sc:placeholder>
+<div class="container">
 
-        <div class="container">
-            <div class="row oLang" id="osbnew ">
-                    <div class="col-xs-9 col-sm-10 col-md-8 col-lg-8 oLang" id="ons">
-                    <sc:placeholder runat="server" id="GroupInsuranceOnlineServices" key="GroupInsuranceOnlineServices"></sc:placeholder>
-                </div>
+        <div class="row" id="osbnew">
 
-                <div id="wb-skip">
-                      <sc:placeholder runat="server" id="GroupInsuranceSkipTo" key="GroupInsuranceSkipTo"></sc:placeholder>
-                </div>
+            <div class="col-xs-9 col-sm-10 col-md-8 col-lg-8 oLang" id="ons">
+                <sc:placeholder runat="server" id="GroupInsuranceOnlineServices" key="GroupInsuranceOnlineServices"></sc:placeholder>
+            </div>
 
-               <div class="col-xs-3 col-sm-2 col-md-4 col-lg-4 pull-right oLang" id="xs">
+            <div id="wb-skip">
+                <sc:placeholder runat="server" id="GroupInsuranceSkipTo" key="GroupInsuranceSkipTo"></sc:placeholder>
+            </div>
 
-                    <div id="oSearch" style="float:left; width:50%">
-                        <button id="searchClick" class="btn btn-default ini" style="display: none;" type="button"><i class="icon-search"></i></button>
-                        <div class="gen" id="gen">
-                        </div>
-                        <div id="search" style="padding-right: 10px;">
-                            <sc:placeholder runat="server" id="GroupInsuranceSearch" key="GroupInsuranceSearch"></sc:placeholder>
-                        </div>
+            <div class="col-xs-3 col-sm-2 col-md-4 col-lg-4 pull-right oLang" id="xs">
+
+                <div id="oSearch">
+                    <button id="searchClick" class="btn btn-default ini" style="display: none;" type="button"><i class="icon-search"></i></button>
+                    <div class="gen" id="gen" style="display:none;">
                     </div>
-                     <div id="oLang" style="float:right; width:49%;">
-                            <sc:placeholder runat="server" id="GroupInsuranceLanguage" key="GroupInsuranceLanguage"></sc:placeholder>
-                        </div>
-                   <div style="clear: both"></div>
-
-                </div>
-
-                  <div style="clear: both"></div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6 col-lg-6 col-md-6 col-xs-6" id="img_box1">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6 col-lg-6 col-md-6 col-xs-6" id="img_box2">
-                </div>
-            </div>
-            <div class="row" id="newLogo" style="position: relative;z-index: 1;">
-                <div class="col-sm-12 col-lg-12 col-md-12 col-xs-12">
-                    <sc:placeholder runat="server" id="GroupInsuranceLogo" key="GroupInsuranceLogo"></sc:placeholder>
-                </div>
-            </div>
-            <div class="row navM" id="navM">
-                <div id="newMenu3" class="col-xs-12 col-sm-12 col-md-12 col-lg-12"></div>
-            </div>
-            <div class="row" id="osb">
-                <div class="col-xs-8 col-sm-12 col-md-12 col-lg-12" id="oNav" aria-label="Main menu">
-                    <sc:placeholder runat="server" id="GroupInsuranceNavbar" key="GroupInsuranceNavbar"></sc:placeholder>
-                </div>
-            </div>
-            <!-- secondary nav here-->
-            <div class="row" style="background-color: #ffffff;" id="secondaryNavigation">
-                <div id="wb-nav">
-                    <sc:placeholder runat="server" id="GroupInsurancePageContentMenu" key="GroupInsurancePageContentMenu"></sc:placeholder>
-                </div>
-
-                <div class="col-sm-12 col-md-8 col-lg-8" style="margin: auto; padding: 15px; background-color: transparent;" id="pageContent">
-                    <!-- content here-->
-                    <div id="wb-cont">
-                        <sc:placeholder runat="server" id="GroupInsurancePageContent" key="GroupInsurancePageContent"></sc:placeholder>
+                    <div id="search">
+                        <sc:placeholder runat="server" id="GroupInsuranceSearch" key="GroupInsuranceSearch"></sc:placeholder>
                     </div>
                 </div>
-
-                <div class="col-sm-6 col-md-4 col-lg-4" style="margin: auto; padding: 15px; background-color: transparent;">
-                    <div id="container_box1a">
-                        <div style="padding: 5px;" id="box1">
-                            <sc:placeholder runat="server" id="GroupInsurancePageContentPromotional" key="GroupInsurancePageContentPromotional"></sc:placeholder>
-                        </div>
-                    </div>
-
-                    <div id="container_box2a">
-                        <div style="padding: 5px;" id="box2">
-                            <sc:placeholder runat="server" id="GroupInsurancePageContentRelated" key="GroupInsurancePageContentRelated"></sc:placeholder>
-                        </div>
-                    </div>
-
-                    <div id="container_box3a">
-                        <div style="padding: 5px;" id="box3">
-                            <sc:placeholder runat="server" id="GroupInsurancePageContentOptional" key="GroupInsurancePageContentOptional"></sc:placeholder>
-                        </div>
-                    </div>
+                <div id="oLang">
+                    <sc:placeholder runat="server" id="GroupInsuranceLanguage" key="GroupInsuranceLanguage"></sc:placeholder>
                 </div>
-            </div>
-
-            <!-- tablet row-->
-            <div id="tablet_content_boxes1" class="row" style="background-color: #ffffff; display: none;">
-                <div class="col-sm-6" style="margin: auto; padding: 15px; background-color: transparent;" id="container_box1">
-                </div>
-                <div class="col-sm-6" style="margin: auto; padding: 15px; background-color: transparent;" id="container_box2">
-                </div>
-            </div>
-
-            <div class="row" id="tablet_content_boxes2" style="background-color: #ffffff; display: none">
-                <div class="col-sm-12" style="margin: auto; padding: 15px; background-color: transparent;" id="container_box3">
-                </div>
-            </div>
-
-            <div class="row footerDiv" id="grayLinks" style="display: none">
-
-                <sc:placeholder runat="server" id="GroupInsuranceAutoInsurance" key="GroupInsuranceAutoInsurance"></sc:placeholder>
-                <sc:placeholder runat="server" id="GroupInsuranceHomeInsurance" key="GroupInsuranceHomeInsurance"></sc:placeholder>
-                <sc:placeholder runat="server" id="GroupInsuranceOtherProducts" key="GroupInsuranceOtherProducts"></sc:placeholder>
-                <sc:placeholder runat="server" id="GroupInsuranceClaims" key="GroupInsuranceClaims"></sc:placeholder>
-                <sc:placeholder runat="server" id="GroupInsuranceGroupSponsors" key="GroupInsuranceGroupSponsors"></sc:placeholder>
-                <sc:placeholder runat="server" id="GroupInsuranceAboutUs" key="GroupInsuranceAboutUs"></sc:placeholder>
+                <div style="clear: both"></div>
 
             </div>
 
-            <div class="row" id="copyright" style="max-height: 40px;">
-                <sc:placeholder runat="server" id="GroupInsuranceFooter" key="GroupInsuranceFooter"></sc:placeholder>
-            </div>
-
+            <div style="clear: both"></div>
         </div>
-    </form></body>
+
+        <!--logo-->
+        <div class="row" id="newLogo" style="position: relative; z-index: 1;">
+            <sc:placeholder runat="server" id="GroupInsuranceLogo" key="GroupInsuranceLogo"></sc:placeholder>
+        </div>
+
+        <!--mobile nav-->
+        <div class="row navM" id="navM" style="display: none;">
+            <div id="newMenu3" class="col-xs-12 col-sm-12 col-md-12 col-lg-12"></div>
+        </div>
+
+        <!--nav-->
+        <div class="row" id="osb" style="display: block;">
+            <div class="col-xs-8 col-sm-12 col-md-12 col-lg-12" id="oNav" aria-label="Main menu">
+                <sc:placeholder runat="server" id="GroupInsuranceNavbar" key="GroupInsuranceNavbar"></sc:placeholder>
+            </div>
+        </div>
+
+        <!--alerts-->
+        <sc:placeholder runat="server" id="GroupInsuranceAlerts" key="GroupInsuranceAlerts"></sc:placeholder>
+
+        <!--banner and rightCTA-->
+        <div id="content" class="row">
+            <!--main banner-->
+            <div id="contentL" class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
+                <sc:placeholder runat="server" id="Placeholder1" key="GroupInsuranceQuoteBanner"></sc:placeholder>
+            </div>
+                    
+            <!--Manage policy circle callout -->    
+            <div id="contentR" class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+                <sc:placeholder runat="server" id="Placeholder2" key="GroupInsuranceContestCampaignETC"></sc:placeholder>
+            </div>
+        </div>
+    </div>
+
+    
+
+            <!--footer-->
+            <footer class="footerCopyright">
+                <sc:placeholder runat="server" id="GroupInsuranceFooter" key="GroupInsuranceFooter"></sc:placeholder>
+            </footer>
+        </form>
+    </body>
 </html>
 
