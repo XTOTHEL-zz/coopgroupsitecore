@@ -1,6 +1,6 @@
 <%@ Import Namespace="Sitecore.Analytics" %>
 
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="GroupInsuranceContentPage.aspx.cs" Inherits="GroupInsuranceUI.layouts.GroupInsurance.Layouts.GroupInsuranceContentPage" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="GroupInsuranceContentPage.aspx.cs" Inherits="GroupInsuranceUI.layouts.GroupInsurance.Layouts.CooperatorsGroupInsurance.GroupInsuranceContentPage" %>
 
 <%@ Register TagPrefix="sc" Namespace="Sitecore.Web.UI.WebControls" Assembly="Sitecore.Kernel" %>
 <%@ OutputCache Location="None" VaryByParam="none" %>
@@ -30,7 +30,7 @@
 
     <!--[if lt IE 9]>
     <link rel="stylesheet" id="ltIE9Stylesheet" runat="server" visible="false" />
-	<![endif]-->
+    <![endif]-->
 
     <script src="/scripts/GroupInsurance/bootstrap/jquery-1.10.2.js"></script>
     <script src="/scripts/GroupInsurance/bootstrap/bootstrap.min.js"></script>
@@ -46,8 +46,7 @@
         $(document).ready(function () {
 
             //jaws to read the menu
-            $("ul[role='menubar']>li>a").on("focus mouseover", function ()
-            {
+            $("ul[role='menubar']>li>a").on("focus mouseover", function () {
                 if ($(this).parent('ul').attr('aria-hidden') == 'false') return;//don't fire if already set to this item
                 $("ul[role='menubar']>li>ul[aria-hidden='false']").attr('aria-hidden', 'true');
                 $(this).parent().children('ul').attr('aria-hidden', 'false');
@@ -165,8 +164,8 @@
                     $(this).removeAttr('tabindex');
                 }).focus();
             }
-         
-            
+
+
             $(":button").focusin(function () {
                 $(this).css('border', '2px solid #F2CB7F');
 
@@ -176,7 +175,7 @@
                 $(this).css('border', '0px solid #F2CB7F');
 
             });
-            
+
             // Highlight targets of in-page links when clicked.
             $("a[href^='#']").click(function (event) {
                 var clickAnchor = "#" + this.href.split('#')[1];
@@ -236,7 +235,7 @@
                     $(this).addClass('ini1');
                     $('#gen').fadeIn(50);
                     $(".gsc-input").focus();
-                    $('#gen').css('position', 'relative').css('z-index', '500').css('margin-left','-200px');
+                    $('#gen').css('position', 'relative').css('z-index', '500').css('margin-left', '-200px');
                 }
                 else if ($(this).hasClass('ini1')) {
                     //  alert('click out');
@@ -329,7 +328,7 @@
             }
 
             function UpdateTablet() {
-                
+
                 $('#tablet_content_boxes1').css('display', 'block'); //
                 $('#tablet_content_boxes2').css('display', 'block'); //
 
@@ -368,7 +367,7 @@
             }
 
             function UpdateDesktop() {
-                
+
                 //  alert('click out');
                 if ($("#btnSearch").hasClass('ini1')) {
                     $("#btnSearch").removeClass('ini1');
@@ -539,17 +538,18 @@
     <sc:VisitorIdentification ID="VisitorIdentification1" runat="server" />
 </head>
 <body runat="server" id="body">
-		<!-- Google Tag Manager --> 
+        <!-- Google Tag Manager --> 
     <link rel="noscript" id="noscript" runat="server" visible="false" enableviewstate="false" />
     <link rel="javascript" id="inlineJavascript" runat="server" visible="false" enableviewstate="false" />
-    <!-- End Google Tag Manager --> 	
+    <!-- End Google Tag Manager -->     
 
     <form id="form1" runat="server">
 
         <asp:hiddenfield runat="server" id="baseURL" clientidmode="Static"></asp:hiddenfield>
         <asp:hiddenfield runat="server" id="language" clientidmode="Static"></asp:hiddenfield>
         <sc:placeholder runat="server" id="GroupInsuranceScroll" key="GroupInsuranceScroll"></sc:placeholder>
-<div class="container">
+
+    <div class="container">
 
         <div class="row" id="osbnew">
 
@@ -593,7 +593,7 @@
 
         <!--nav-->
         <div class="row" id="osb" style="display: block;">
-            <div class="col-xs-8 col-sm-12 col-md-12 col-lg-12" id="oNav" aria-label="Main menu">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="oNav" aria-label="Main menu">
                 <sc:placeholder runat="server" id="GroupInsuranceNavbar" key="GroupInsuranceNavbar"></sc:placeholder>
             </div>
         </div>
@@ -601,27 +601,23 @@
         <!--alerts-->
         <sc:placeholder runat="server" id="GroupInsuranceAlerts" key="GroupInsuranceAlerts"></sc:placeholder>
 
-        <!--banner and rightCTA-->
+        <!--content and promo-->
         <div id="content" class="row">
-            <!--main banner-->
-            <div id="contentL" class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
-                <sc:placeholder runat="server" id="Placeholder1" key="GroupInsuranceQuoteBanner"></sc:placeholder>
-            </div>
+            <sc:placeholder runat="server" id="GroupInsurancePageContent" key="GroupInsurancePageContent"></sc:placeholder>
                     
-            <!--Manage policy circle callout -->    
-            <div id="contentR" class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
-                <sc:placeholder runat="server" id="Placeholder2" key="GroupInsuranceContestCampaignETC"></sc:placeholder>
-            </div>
+            <sc:placeholder runat="server" id="GroupInsurancePageContentPromotional" key="GroupInsurancePageContentPromotional"></sc:placeholder>
+
+            <sc:placeholder runat="server" id="GroupInsurancePageContentRelated" key="GroupInsurancePageContentRelated"></sc:placeholder>
+
+            <sc:placeholder runat="server" id="GroupInsurancePageContentOptional" key="GroupInsurancePageContentOptional"></sc:placeholder>
         </div>
+
     </div>
 
-    
+    <!--footer-->
+    <footer class="footerCopyright">
+        <sc:placeholder runat="server" id="GroupInsuranceFooter" key="GroupInsuranceFooter"></sc:placeholder>
+    </footer>
 
-            <!--footer-->
-            <footer class="footerCopyright">
-                <sc:placeholder runat="server" id="GroupInsuranceFooter" key="GroupInsuranceFooter"></sc:placeholder>
-            </footer>
-        </form>
-    </body>
+    </form></body>
 </html>
-

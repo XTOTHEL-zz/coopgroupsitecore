@@ -467,7 +467,7 @@
     <form id="form1" runat="server">
         <asp:hiddenfield runat="server" id="baseURL" clientidmode="Static"></asp:hiddenfield>
         <asp:hiddenfield runat="server" id="language" clientidmode="Static"></asp:hiddenfield>
-    </form>
+
     <sc:placeholder runat="server" id="GroupInsuranceScroll" key="GroupInsuranceScroll"></sc:placeholder>
     <div class="container">
 
@@ -513,7 +513,7 @@
 
         <!--nav-->
         <div class="row" id="osb" style="display: block;">
-            <div class="col-xs-8 col-sm-12 col-md-12 col-lg-12" id="oNav" aria-label="Main menu">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="oNav" aria-label="Main menu">
                 <sc:placeholder runat="server" id="GroupInsuranceNavbar" key="GroupInsuranceNavbar"></sc:placeholder>
             </div>
         </div>
@@ -524,12 +524,12 @@
         <!--banner and rightCTA-->
         <div id="banners" class="row">
             <!--main banner-->
-            <div id="bnrCont" class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
+            <div id="bnrCont" class="col-xs-12 col-sm-7 col-md-9 col-lg-9">
                 <sc:placeholder runat="server" id="Placeholder1" key="GroupInsuranceQuoteBanner"></sc:placeholder>
             </div>
                     
             <!--Manage policy circle callout -->    
-            <div id="bnrCTA" class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+            <div id="bnrCTA" class="col-xs-12 col-sm-5 col-md-3 col-lg-3">
                 <sc:placeholder runat="server" id="Placeholder2" key="GroupInsuranceContestCampaignETC"></sc:placeholder>
             </div>
         </div>
@@ -555,5 +555,7 @@
     <!--footer-->
     <footer class="footerCopyright">
         <sc:placeholder runat="server" id="GroupInsuranceFooter" key="GroupInsuranceFooter"></sc:placeholder>
-    </footer></body>
+    </footer>
+
+    </form></body>
 </html>
